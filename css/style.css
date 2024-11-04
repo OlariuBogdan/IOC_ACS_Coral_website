@@ -233,6 +233,58 @@ btn:active{
 }
 
 
+
+.heading{
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 10px;
+  
+  
+}
+.paragraf{
+  font-size: 14px;
+  &:not(:last-child){
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+}
+.btn-text{
+    color: #000000;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid red;
+    padding: 3px;
+    transition: all .2s;
+    margin-left: 20px;
+
+}
+.btn-text:hover{
+  background-color: white;
+  color: #444;
+  box-shadow: 0 1rem 2 rem black .15;
+  transform: translateY(-2px);
+
+}
+.btn-text:active{
+  box-shadow: 0 1rem 2 rem black .15;
+  transform: translateY(-2px);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .footer{
   background-color: #444;
   color: #FFF;
