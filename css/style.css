@@ -12,6 +12,7 @@ Grey #777
   margin: 0;
   padding: 0;
   box-sizing: border-box;/*nu adaog marginile si paddingul la inaltimea totala a "box-ului"*/
+ 
 
 }
 
@@ -21,7 +22,12 @@ Grey #777
     font-size: 16px;
     line-height: 1.7;
     color: #777;
+    background-color: #000000;
     /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
   }
   .header{
     height: 95vh;
@@ -29,6 +35,7 @@ Grey #777
     background-position: top;
     z-index: -1;
     position: relative;
+    margin-bottom: 20px;
 
 
   }
@@ -179,4 +186,56 @@ btn:active{
   animation:anim-btn .5s ease-out.75s;
   animation-fill-mode: backwards; /*sa aplice animatia mai tarziu*/
 }
-  
+
+.grid-test {
+  margin-top:54%;
+}
+.row{
+  max-width: 100%;
+  background-color: #777;
+  margin: 0 auto; /*centram elementul in mijloc*/
+  color: #000000;
+  margin-bottom: 80px;
+}
+.col-1-of-2{
+  width: 50%;
+  background-color: rgb(189, 183, 183);
+  margin-bottom: 20px;
+  gap: 20px;
+  float: right;
+  padding-bottom: 10px;
+
+}
+.section-despre{
+  margin-top:54%;
+  background-color: #d8d5d5;
+  padding:5rem 0rem  15rem 0rem ;
+}
+.centrare-text{
+  text-align: center;
+}
+
+.antrenamente{
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #000000, #ff0000);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s;
+ 
+}
+.antrenamente:hover{
+  transform: skewY(2deg) skewx(5deg) scale(1.1);
+  text-shadow: .5px 1px;
+}
+
+
+.footer{
+  background-color: #444;
+  color: #FFF;
+  display: inline-block;
+  text-align: center;
+}
