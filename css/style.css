@@ -1,0 +1,182 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+Grey: #444
+Grey #777
+
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;/*nu adaog marginile si paddingul la inaltimea totala a "box-ului"*/
+
+}
+
+  body{
+    font-family:"Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    /* padding: 30px; */
+  }
+  .header{
+    height: 95vh;
+    background-size: cover;
+    background-position: top;
+    z-index: -1;
+    position: relative;
+
+
+  }
+video{
+  z-index: -1;
+  
+}
+  .zone {
+    /*padding:30px 50px;*/
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    transition: all 0.3s linear;
+}
+.zone:hover {
+  box-shadow:rgba(6, 57, 224, 0.836) 0px 5px 15px, inset rgba(185, 183, 183, 0.849) 0px -10px 20px;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  font-size: 0.5em;
+  background-color: #000000;
+  
+}
+.push {
+  margin-left: auto;
+}
+
+li {
+  padding: 20px;
+}
+
+a {
+  color: #f5f5f6;
+  text-decoration: none;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+.text-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* misc 50% la stanga si in sus pentru a o centra*/
+  text-align: center;/* pentru a alinia si elementele child - btn-alb*/
+ 
+}
+
+.header-prim{
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  /*background: rgba(119, 119, 119, 0.226);*/
+  margin-bottom: 60px; /* mut btn-alb 60px mai jos*/
+  
+  
+
+}
+.header-principal{
+  display: block; /*elementul span ocupa tot spatiu*/
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 25px;
+  animation-name: spreStanga;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  /*animation-iteration-count: 2;*/
+  text-shadow: 0 10px 20px rgb(14, 13, 13);
+  
+}
+.header-secundar{
+  display: block; /*elementul span ocupa tot spatiu*/
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 15px;
+  animation: spreDreapta  3s ease-out; /*scriere prescurtata pt inversul animatiei de mai sus*/
+  text-shadow: 0 10px 20px rgb(14, 13, 13);
+}
+@keyframes spreStanga{
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+
+  }
+}
+
+@keyframes spreDreapta{
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+
+  }
+  80%{
+    transform: translatex(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+
+  }
+}
+.btn:link, .btn:visited{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .3s;
+  position: relative;
+  
+}
+.btn-alb{
+  background-color: #fff;
+  color: #777;
+}
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgb(14, 13, 13);
+}
+btn:active{
+  transform: translateY(-1px);
+}
+@keyframes anim-btn{
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+
+ 
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+
+  }
+}
+.btn-anim {
+  animation:anim-btn .5s ease-out.75s;
+  animation-fill-mode: backwards; /*sa aplice animatia mai tarziu*/
+}
+  
