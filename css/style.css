@@ -271,10 +271,45 @@ btn:active{
   box-shadow: 0 1rem 2 rem black .15;
   transform: translateY(-2px);
 
-
-
+}
+.comp{
+  position: relative;
+ 
+ 
+}
+.comp{
+  padding-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
+.comp-foto{
+  width: 50%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  /*border-radius: 2px;*/
+  position: absolute; /*va fi plasat in referinta cu primul parinte*/
+  transition: all .2s;
+  outline-offset: 2rem;
+  /*trebuie modificat z indexul navigatiei*/
+}
+  .comp-foto--p1{
+    left: 0;
+    top: -2rem;
+  }
+  .comp-foto--p2{
+    right: 10%;
+    top: 2rem;
+  }
+  .comp-foto--p3{
+    left: 20%;
+    top: 10rem;
+  }
+  .comp-foto:hover{
+    outline: 1.5rem solid grey;
+    transform: scale(1.05) translateY(.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 20;
+
+  }
 
 
 
@@ -291,4 +326,6 @@ btn:active{
   color: #FFF;
   display: inline-block;
   text-align: center;
+  margin-top: 10rem;
+  /*padding-top: 10rem;*/
 }
