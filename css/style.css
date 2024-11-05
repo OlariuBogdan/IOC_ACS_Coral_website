@@ -337,6 +337,34 @@ btn:active{
   .row-ant{
     opacity: .9;
   }
+
+  .section-echipa{
+    margin-top: 2%;
+    padding-top: 10px;
+    margin-left: 20px;
+    height: 50rem;
+    /* opacity: .6; */
+    background-size: cover;
+  }
+  .h2-echipa{
+
+  }
+  .echipa-box{
+    background-color: #444;
+    width: 90%;
+    height: 15rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transform: skew(-10deg);
+    opacity: .6;
+    box-shadow: 0 1.5rem 4rem black;
+    
+    
+   
+  }
     
   
 
