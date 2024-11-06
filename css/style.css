@@ -1,9 +1,6 @@
 /*
-COLORS:
+Culori:
 
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
 Grey: #444
 Grey #777
 
@@ -61,6 +58,7 @@ video{
   margin: 0;
   font-size: 0.5em;
   background-color: #000000;
+
   
 }
 .push {
@@ -346,12 +344,10 @@ btn:active{
     /* opacity: .6; */
     background-size: cover;
   }
-  .h2-echipa{
 
-  }
-  .echipa-box{
-    background-color: #444;
-    width: 90%;
+  .row-echipa{
+    background-color: #ffffff;
+    width: 70%;
     height: 15rem;
     display: block;
     margin-left: auto;
@@ -361,9 +357,31 @@ btn:active{
     transform: skew(-10deg);
     opacity: .6;
     box-shadow: 0 1.5rem 4rem black;
+    font-size: 1.6rem;
     
+  }
+  .antrenor{
+    margin-left: 1rem;
+    color: #000000; 
+  }
+  .antrenor-p .antrenor-p-head{
+    font-size: medium;
+    transform:translateX(1rem);
+    color: #000000;
+  }
+  .echipa-box{
     
-   
+    width: 10rem;
+    height: 10rem;
+    /* background-color: #ff0000; */
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path:circle(50% at 50% 50%) ;
+    clip-path:-webkit-shape-outside: circle(50% at 50% 50%); 
+  }
+  .antrenor1{
+    width: 100%;
   }
     
   
