@@ -51,6 +51,9 @@ video{
 .zone:hover {
   box-shadow:rgba(6, 57, 224, 0.836) 0px 5px 15px, inset rgba(185, 183, 183, 0.849) 0px -10px 20px;
 }
+nav{
+  z-index: 1000;
+}
 
 .main-nav {
   display: flex;
@@ -59,8 +62,13 @@ video{
   font-size: 0.5em;
   background-color: #000000;
 
-  
 }
+.main-nav li a:hover {
+  color: #ff0000; /* Schimbă culoarea la hover */
+  transition: color 0.3s ease;
+}
+
+
 .push {
   margin-left: auto;
 }
@@ -159,6 +167,7 @@ width: 100%;
 .btn-alb{
   background-color: #fff;
   color: #777;
+  
 }
 .btn:hover{
   transform: translateY(-3px);
