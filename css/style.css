@@ -204,6 +204,9 @@ btn:active{
   padding: 10px;
 
 }
+.despre{
+  z-index: -1;
+}
 .section-despre{
   margin-top:54%;
   background-color: #ffffff;
@@ -224,6 +227,7 @@ btn:active{
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s;
+  z-index: -1;
  
 }
 .antrenamente:hover{
@@ -305,7 +309,7 @@ btn:active{
     outline: 1.5rem solid grey;
     transform: scale(1.05) translateY(.5rem);
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-    z-index: 20;
+    /* z-index: 20; */
 
   }
   .section-antrenamente{
@@ -315,6 +319,7 @@ btn:active{
     /* opacity: .6; */
     margin-top: 25rem;
     background-size: cover;
+    z-index: -1;
     
   }
  
@@ -344,6 +349,7 @@ btn:active{
     height: 50rem;
     /* opacity: .6; */
     background-size: cover;
+    z-index: -1;
   }
 
   .row-echipa{
@@ -395,25 +401,56 @@ btn:active{
 
   } */
     
-  
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer{
-  background-color: #444;
-  color: #FFF;
-  display: inline-block;
+  margin-top: 4rem;
+  margin-bottom: 10px;
+  
+  background-color: #333;
+  padding: 5rem 5rem 5rem 5rem;
+  font-size: 1rem;
   text-align: center;
-  margin-top: 10rem;
-  /*padding-top: 10rem;*/
+}
+
+.logobox{
+  text-align: center;
+
+}
+.logo{
+  height: 15rem;
+  width: auto;
+}
+
+.footer-list{
+  list-style: none;
+  background-color: #444;
+}
+.footer-item{
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.footer-nav{
+  border-top: 1px solid white;
+  padding: 2rem;
+  display: inline-block;
+
+}
+
+.footer-link, .footer-link:visited{
+  color: #999;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s;
+}
+.footer-link:hover{
+  color: #ff0000;
+  background-color: #555;
+  transform: rotate(5deg) scale(1.2);
+}
+.footer_copy-righ{
+  border-top: 1px solid black;
+  padding: 2rem;
+  width: 80%;
+  
 }
