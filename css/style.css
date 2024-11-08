@@ -1,6 +1,6 @@
 /*
 Culori:
-
+#f5f5f5 pentru contrast background
 Grey: #444
 Grey #777
 
@@ -411,6 +411,84 @@ btn:active{
     z-index: -1;
 
   } */
+
+
+
+
+  /*sectiune contact*/
+  .contact-section {
+    margin-top: 15rem;
+    padding: 5rem 2rem;
+    background-color: #f5f5f5; /* fundal pentru contrast */
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contact-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .contact-details {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .contact-details li {
+    margin-bottom: 0.5rem;
+    color: #777;
+  }
+  
+  .contact-form {
+    margin-top: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: #444;
+  }
+  
+  .btn-alb {
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
+    color: #777;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .btn-alb:hover {
+    background-color: #f0f0f0;
+    color: #444;
+  }
+  
     
 
 .footer{
