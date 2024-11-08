@@ -251,8 +251,10 @@ btn:active{
   font-weight: 700;
   text-transform: uppercase;
   margin-left: 10px;
-  
-  
+  margin-bottom: 40px 
+}
+.ant-text{
+  margin-bottom: 40px 
 }
 .paragraf{
     font-size: 14px;
@@ -455,9 +457,13 @@ btn:active{
 .footer-link:hover{
   color: #ff0000;
   background-color: #555;
-  transform: rotate(5deg) scale(1.2);
+  
 }
-.footer_copy-righ{
+.footer-item:hover{
+  transform: rotate(5deg) scale(1.1);
+
+}
+.footer_copy_right{
   border-top: 1px solid black;
   padding: 2rem;
   width: 80%;
