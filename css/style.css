@@ -5,53 +5,59 @@ Grey: #444
 Grey #777
 
 */
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;/*nu adaog marginile si paddingul la inaltimea totala a "box-ului"*/
- 
+  box-sizing: border-box;
+  /*nu adaog marginile si paddingul la inaltimea totala a "box-ului"*/
+
 
 }
 
-  body{
-    font-family:"Lato", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #777;
-    background-color: #ffffff;
-    /* padding: 30px; */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-  }
-  .header{
-    height: 95vh;
-    background-size: cover;
-    background-position: top;
-    z-index: -1;
-    position: relative;
-    margin-bottom: 20px;
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  background-color: #ffffff;
+  /* padding: 30px; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
 
-
-  }
-video{
+.header {
+  height: 95vh;
+  background-size: cover;
+  background-position: top;
   z-index: -1;
-  
+  position: relative;
+  margin-bottom: 20px;
+
+
 }
-  .zone {
-    /*padding:30px 50px;*/
-    cursor:pointer;
-    color:#FFF;
-    font-size:2em;
-    border-radius:4px;
-    transition: all 0.3s linear;
+
+video {
+  z-index: -1;
+
 }
+
+.zone {
+  /*padding:30px 50px;*/
+  cursor: pointer;
+  color: #FFF;
+  font-size: 2em;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+
 .zone:hover {
-  box-shadow:rgba(6, 57, 224, 0.836) 0px 5px 15px, inset rgba(185, 183, 183, 0.849) 0px -10px 20px;
+  box-shadow: rgba(6, 57, 224, 0.836) 0px 5px 15px, inset rgba(185, 183, 183, 0.849) 0px -10px 20px;
 }
-nav{
+
+nav {
   z-index: 1000;
 }
 
@@ -63,8 +69,10 @@ nav{
   background-color: #000000;
 
 }
+
 .main-nav li a:hover {
-  color: #ff0000; /* Schimbă culoarea la hover */
+  color: #ff0000;
+  /* Schimbă culoarea la hover */
   transition: color 0.3s ease;
 }
 
@@ -83,31 +91,37 @@ a {
 }
 
 .sticky {
-position: fixed;
-top: 0;
-width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-.text-box{
+
+.text-box {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* misc 50% la stanga si in sus pentru a o centra*/
-  text-align: center;/* pentru a alinia si elementele child - btn-alb*/
- 
+  transform: translate(-50%, -50%);
+  /* misc 50% la stanga si in sus pentru a o centra*/
+  text-align: center;
+  /* pentru a alinia si elementele child - btn-alb*/
+
 }
 
-.header-prim{
+.header-prim {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   /*background: rgba(119, 119, 119, 0.226);*/
-  margin-bottom: 60px; /* mut btn-alb 60px mai jos*/
-  
-  
+  margin-bottom: 60px;
+  /* mut btn-alb 60px mai jos*/
+
+
 
 }
-.header-principal{
-  display: block; /*elementul span ocupa tot spatiu*/
+
+.header-principal {
+  display: block;
+  /*elementul span ocupa tot spatiu*/
   font-size: 60px;
   font-weight: 800;
   letter-spacing: 25px;
@@ -116,45 +130,54 @@ width: 100%;
   animation-timing-function: ease-out;
   /*animation-iteration-count: 2;*/
   text-shadow: 0 10px 20px rgb(14, 13, 13);
-  
+
 }
-.header-secundar{
-  display: block; /*elementul span ocupa tot spatiu*/
+
+.header-secundar {
+  display: block;
+  /*elementul span ocupa tot spatiu*/
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 15px;
-  animation: spreDreapta  3s ease-out; /*scriere prescurtata pt inversul animatiei de mai sus*/
+  animation: spreDreapta 3s ease-out;
+  /*scriere prescurtata pt inversul animatiei de mai sus*/
   text-shadow: 0 10px 20px rgb(14, 13, 13);
 }
-@keyframes spreStanga{
-  0%{
+
+@keyframes spreStanga {
+  0% {
     opacity: 0;
     transform: translateX(-100px);
 
   }
-  100%{
+
+  100% {
     opacity: 1;
     transform: translate(0);
 
   }
 }
 
-@keyframes spreDreapta{
-  0%{
+@keyframes spreDreapta {
+  0% {
     opacity: 0;
     transform: translateX(100px);
 
   }
-  80%{
+
+  80% {
     transform: translatex(-10px);
   }
-  100%{
+
+  100% {
     opacity: 1;
     transform: translate(0);
 
   }
 }
-.btn:link, .btn:visited{
+
+.btn:link,
+.btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
@@ -162,49 +185,59 @@ width: 100%;
   border-radius: 100px;
   transition: all .3s;
   position: relative;
-  
+
 }
-.btn-alb{
+
+.btn-alb {
   background-color: #fff;
   color: #777;
-  
+
 }
-.btn:hover{
+
+.btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgb(14, 13, 13);
 }
-btn:active{
+
+btn:active {
   transform: translateY(-1px);
 }
-@keyframes anim-btn{
-  0%{
+
+@keyframes anim-btn {
+  0% {
     opacity: 0;
     transform: translateY(30px);
 
- 
+
   }
-  100%{
+
+  100% {
     opacity: 1;
     transform: translate(0);
 
   }
 }
+
 .btn-anim {
-  animation:anim-btn .5s ease-out.75s;
-  animation-fill-mode: backwards; /*sa aplice animatia mai tarziu*/
+  animation: anim-btn .5s ease-out.75s;
+  animation-fill-mode: backwards;
+  /*sa aplice animatia mai tarziu*/
 }
 
 .grid-test {
-  margin-top:54%;
+  margin-top: 54%;
 }
-.row{
+
+.row {
   max-width: 100%;
   background-color: #ffffff;
-  margin: 0 auto; /*centram elementul in mijloc*/
+  margin: 0 auto;
+  /*centram elementul in mijloc*/
   color: #000000;
   margin-bottom: 80px;
 }
-.col-1-of-2{
+
+.col-1-of-2 {
   width: 50%;
   background-color: #ffffff;
   margin-bottom: 20px;
@@ -213,20 +246,23 @@ btn:active{
   padding: 10px;
 
 }
-.despre{
+
+.despre {
   z-index: -1;
 }
-.section-despre{
-  margin-top:54%;
+
+.section-despre {
+  margin-top: 54%;
   background-color: #ffffff;
-  padding:5rem 0rem  15rem 0rem ;
+  padding: 5rem 0rem 15rem 0rem;
 }
-.centrare-text{
+
+.centrare-text {
   text-align: left;
   margin-left: 30px;
 }
 
-.antrenamente{
+.antrenamente {
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -237,171 +273,240 @@ btn:active{
   letter-spacing: 2px;
   transition: all .2s;
   z-index: -1;
- 
+
 }
-.antrenamente:hover{
+
+.antrenamente:hover {
   transform: skewY(2deg) skewx(5deg) scale(1.1);
   text-shadow: .5px 1px;
 }
 
 
 
-.heading{
+.heading {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   margin-left: 10px;
-  margin-bottom: 40px 
+  margin-bottom: 40px
 }
-.ant-text{
-  margin-bottom: 40px 
+
+.ant-text {
+  margin-bottom: 40px
 }
-.paragraf{
-    font-size: 14px;
-    &:not(:last-child){
-      margin-bottom: 30px;
-      margin-left: 10px;
+
+.paragraf {
+  font-size: 14px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+    margin-left: 10px;
   }
 }
-.btn-text{
-    color: #000000;
-    display: inline-block;
-    text-decoration: none;
-    border-bottom: 1px solid red;
-    padding: 3px;
-    transition: all .2s;
-    margin-left: 20px;
+
+.btn-text {
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid red;
+  padding: 3px;
+  transition: all .2s;
+  margin-left: 20px;
 
 }
-.btn-text:hover{
+
+.btn-text:hover {
   background-color: rgb(139, 135, 135);
   color: #444;
   box-shadow: 0 1rem 2 rem black .15;
   transform: translateY(-2px);
-
 }
-.btn-text:active{
+
+.btn-text:active {
   box-shadow: 0 1rem 2 rem black .15;
   transform: translateY(-2px);
+}
 
-}
-.comp{
+.comp {
   position: relative;
- 
- 
 }
-.comp{
+
+.comp {
   padding-bottom: 10rem;
   margin-bottom: 10rem;
 }
 
-.comp-foto{
+.comp-foto {
   width: 50%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   /*border-radius: 2px;*/
-  position: absolute; /*va fi plasat in referinta cu primul parinte*/
+  position: absolute;
+  /*va fi plasat in referinta cu primul parinte*/
   transition: all .2s;
   outline-offset: 2rem;
   /*trebuie modificat z indexul navigatiei*/
 }
-  .comp-foto--p1{
-    left: 0;
-    top: -2rem;
-  }
-  .comp-foto--p2{
-    right: 10%;
-    top: 2rem;
-  }
-  .comp-foto--p3{
-    left: 20%;
-    top: 10rem;
-  }
-  .comp-foto:hover{
-    outline: 1.5rem solid grey;
-    transform: scale(1.05) translateY(.5rem);
-    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-    /* z-index: 20; */
 
-  }
-  .section-antrenamente{
-    padding: 10rem 20rem 20rem 20rem;
-    background-image: url(../img/9M7A6646.jpg );
-    height: 50rem;
-    /* opacity: .6; */
-    margin-top: 25rem;
-    background-size: cover;
-    z-index: -1;
-    
-  }
- 
-  .ant-box{
-    background-color: #ffffff ;
-    font-size: 1.5 rem;
-    padding: 2.5rem;
-    text-align: center;
-    border-radius: 3px;
-    position: relative;
-    float: left;
-    margin: 30px;
-    width: 20rem;
-    height: 30rem;
-   
-    box-shadow: 0 1.5rem 4rem black;
-  }
-  .row-ant{
-    opacity: .9;
-  }
+.comp-foto--p1 {
+  left: 0;
+  top: -2rem;
+}
 
-  .section-echipa{
-    position: relative;
-    margin-top: 2%;
-    padding-top: 10px;
-    margin-left: 20px;
-    height: 50rem;
-    /* opacity: .6; */
-    background-size: cover;
-    z-index: -1;
-  }
+.comp-foto--p2 {
+  right: 10%;
+  top: 2rem;
+}
 
-  .row-echipa{
-    /* background-color: #ffffff; */
-    width: 70%;
-    height: 15rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    transform: skew(-10deg);
-    opacity: .6;
-    box-shadow: 0 1.5rem 4rem black;
-    font-size: 1.6rem;
-    
-  }
-  .antrenor{
-    margin-left: 1rem;
-    color: #000000; 
-  }
-  .antrenor-p .antrenor-p-head{
-    font-size: medium;
-    transform:translateX(1rem);
-    color: #000000;
-  }
-  .echipa-box{
-    
-    width: 10rem;
-    height: 10rem;
-    /* background-color: #ff0000; */
-    float: left;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    clip-path:circle(50% at 50% 50%) ;
-    clip-path:-webkit-shape-outside: circle(50% at 50% 50%); 
-  }
-  .antrenor1{
-    width: 100%;
-  }
-  /*
+.comp-foto--p3 {
+  left: 20%;
+  top: 10rem;
+}
+
+.comp-foto:hover {
+  outline: 1.5rem solid grey;
+  transform: scale(1.05) translateY(.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  /* z-index: 20; */
+}
+
+.section-antrenamente {
+  padding: 10rem 20rem 20rem 20rem;
+  background-image: url(../img/9M7A6646.jpg );
+  height: 50rem;
+  /* opacity: .6; */
+  margin-top: 25rem;
+  background-size: cover;
+  z-index: -1;
+}
+
+.ant-box {
+  background-color: #ffffff;
+  font-size: 1.5 rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  position: relative;
+  float: left;
+  margin: 30px;
+  width: 20rem;
+  height: 30rem;
+
+  box-shadow: 0 1.5rem 4rem black;
+}
+
+/* Modified by Laur*/
+.ant-box .content1 {
+  background-color: #999;
+  color: black;
+  font-size: 1.5 rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  margin: 30px;
+  margin-top: 1px;
+  width: 1200px;
+  height: auto;
+  z-index: 1;
+  border: 2px solid black;
+  box-shadow: rgba(6, 57, 224, 0.836) 0px 5px 15px, inset rgba(185, 183, 183, 0.849) 0px -10px 20px;
+}
+
+/* Modified by Laur*/
+.ant-box .content2 {
+  background-color: #999;
+  color: black;
+  font-size: 1.5 rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  margin: -330px;
+  margin-top: 1px;
+  width: 1200px;
+  height: auto;
+  z-index: 1;
+  border: 2px solid black;
+  box-shadow: rgba(6, 57, 224, 0.836) 0px 5px 15px, inset rgba(185, 183, 183, 0.849) 0px -10px 20px;
+}
+
+/* Modified by Laur*/
+.ant-box .content3 {
+  background-color: #999;
+  color: black;
+  font-size: 1.5 rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  margin: -750px;
+  margin-top: 1px;
+  width: 1200px;
+  height: auto;
+  z-index: 1;
+  border: 2px solid black;
+  box-shadow: rgba(6, 57, 224, 0.836) 0px 5px 15px, inset rgba(185, 183, 183, 0.849) 0px -10px 20px;
+}
+
+.row-ant {
+  opacity: .9;
+}
+
+.section-echipa {
+  position: relative;
+  margin-top: 2%;
+  padding-top: 10px;
+  margin-left: 20px;
+  height: 50rem;
+  /* opacity: .6; */
+  background-size: cover;
+  z-index: -1;
+}
+
+.row-echipa {
+  /* background-color: #ffffff; */
+  width: 70%;
+  height: 15rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  transform: skew(-10deg);
+  opacity: .6;
+  box-shadow: 0 1.5rem 4rem black;
+  font-size: 1.6rem;
+
+}
+
+.antrenor {
+  margin-left: 1rem;
+  color: #000000;
+}
+
+.antrenor-p .antrenor-p-head {
+  font-size: medium;
+  transform: translateX(1rem);
+  color: #000000;
+}
+
+.echipa-box {
+
+  width: 10rem;
+  height: 10rem;
+  /* background-color: #ff0000; */
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  clip-path: -webkit-shape-outside: circle(50% at 50% 50%);
+}
+
+.antrenor1 {
+  width: 100%;
+}
+
+/*
   .bg-video2{
     position: absolute;
     top: 0;
@@ -415,135 +520,206 @@ btn:active{
 
 
 
-  /*sectiune contact*/
-  .contact-section {
-    margin-top: 15rem;
-    padding: 5rem 2rem;
-    background-color: #f5f5f5; /* fundal pentru contrast */
-  }
-  
-  .contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .contact-heading {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #444;
-  }
-  
-  .contact-details {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-  }
-  
-  .contact-details li {
-    margin-bottom: 0.5rem;
-    color: #777;
-  }
-  
-  .contact-form {
-    margin-top: 2rem;
-  }
-  
-  .form-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  .form-group label {
-    display: block;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-  
-  .form-input,
-  .form-textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  .form-input:focus,
-  .form-textarea:focus {
-    outline: none;
-    border-color: #444;
-  }
-  
-  .btn-alb {
-    padding: 0.75rem 1.5rem;
-    background-color: #ffffff;
-    color: #777;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .btn-alb:hover {
-    background-color: #f0f0f0;
-    color: #444;
-  }
-  
-    
+/*sectiune contact*/
+.contact-section {
+  margin-top: 15rem;
+  padding: 5rem 2rem;
+  background-color: #f5f5f5;
+  /* fundal pentru contrast */
+}
 
-.footer{
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.contact-details li {
+  margin-bottom: 0.5rem;
+  color: #777;
+}
+
+.contact-form {
+  margin-top: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #444;
+}
+
+.btn-alb {
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
+  color: #777;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-alb:hover {
+  background-color: #f0f0f0;
+  color: #444;
+}
+
+
+
+.footer {
   margin-top: 4rem;
   margin-bottom: 10px;
-  
+
   background-color: #333;
   padding: 5rem 5rem 5rem 5rem;
   font-size: 1rem;
   text-align: center;
 }
 
-.logobox{
+.logobox {
   text-align: center;
 
 }
-.logo{
+
+.logo {
   height: 15rem;
   width: auto;
 }
 
-.footer-list{
+.footer-list {
   list-style: none;
   background-color: #444;
 }
-.footer-item{
+
+.footer-item {
   display: inline-block;
   margin-right: 1rem;
 }
 
-.footer-nav{
+.footer-nav {
   border-top: 1px solid white;
   padding: 2rem;
   display: inline-block;
 
 }
 
-.footer-link, .footer-link:visited{
+.footer-link,
+.footer-link:visited {
   color: #999;
   text-decoration: none;
   text-transform: uppercase;
   transition: all .2s;
 }
-.footer-link:hover{
+
+.footer-link:hover {
   color: #ff0000;
   background-color: #555;
-  
+
 }
-.footer-item:hover{
+
+.footer-item:hover {
   transform: rotate(5deg) scale(1.1);
 
 }
-.footer_copy_right{
+
+.footer_copy_right {
   border-top: 1px solid black;
   padding: 2rem;
   width: 80%;
-  
+
+}
+
+/*Laurentiu Part*/
+
+#ch1 {
+  display: none;
+}
+
+#ch2 {
+  display: none;
+}
+
+#ch3 {
+  display: none;
+}
+
+#ch1:checked~.content1 {
+  display: block;
+}
+
+#ch2:checked~.content2 {
+  display: block;
+}
+
+#ch3:checked~.content3 {
+  display: block;
+}
+
+#ch1:checked~label {
+  display: none;
+}
+
+#ch2:checked~label {
+  display: none;
+}
+
+#ch3:checked~label {
+  display: none;
+}
+
+.content1 {
+  display: none;
+}
+
+.content2 {
+  display: none;
+}
+
+.content3 {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #333;
+  padding: 3px 13px;
+  border-radius: 3px;
+  margin-top: 13px;
+}
+
+label:hover {
+  box-shadow: rgba(6, 57, 224, 0.836) 0px 5px 15px, inset rgba(185, 183, 183, 0.849) 0px -10px 20px;
 }
