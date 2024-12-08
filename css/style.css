@@ -263,6 +263,7 @@ btn:active {
 }
 
 .antrenamente {
+  padding-top: 30px;
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -370,11 +371,10 @@ btn:active {
 }
 
 .section-antrenamente {
-  padding: 10rem 20rem 20rem 20rem;
-  background-image: url(../img/9M7A6646.jpg );
+  padding: 0rem 20rem 20rem 20rem;
   height: 50rem;
   /* opacity: .6; */
-  margin-top: 25rem;
+  margin-top: 10rem;
   background-size: cover;
   z-index: -1;
 }
@@ -393,6 +393,7 @@ btn:active {
 
   box-shadow: 0 1.5rem 4rem black;
 }
+
 
 /* Modified by Laur*/
 .ant-box .content1 {
@@ -464,7 +465,7 @@ btn:active {
 }
 
 .row-echipa {
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
   width: 70%;
   height: 15rem;
   display: block;
