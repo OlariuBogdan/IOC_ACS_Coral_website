@@ -254,7 +254,7 @@ btn:active {
 .section-despre {
   margin-top: 54%;
   background-color: #ffffff;
-  padding: 5rem 0rem 15rem 0rem;
+  padding: 5rem 0rem 5rem 0rem;
 }
 
 .centrare-text {
@@ -329,13 +329,16 @@ btn:active {
 }
 
 .comp {
-  position: relative;
+    
+  position:relative;
+ 
+ 
 }
 
-.comp {
+/* .comp {
   padding-bottom: 10rem;
   margin-bottom: 10rem;
-}
+} */
 
 .comp-foto {
   width: 50%;
@@ -346,21 +349,22 @@ btn:active {
   transition: all .2s;
   outline-offset: 2rem;
   /*trebuie modificat z indexul navigatiei*/
+  margin-left: 60rem;
 }
 
 .comp-foto--p1 {
-  left: 0;
+  left: 10%;
   top: -2rem;
 }
 
 .comp-foto--p2 {
-  right: 10%;
+  left: 30%;
   top: 2rem;
 }
 
 .comp-foto--p3 {
-  left: 20%;
-  top: 10rem;
+  left: 0%;
+  top: 12rem;
 }
 
 .comp-foto:hover {
