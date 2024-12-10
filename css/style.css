@@ -446,6 +446,7 @@ btn:active {
 
 .row-echipa {
   background-color: #ffffff;
+  /* background-color: #ff0404; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -490,21 +491,25 @@ btn:active {
   font-size: medium;
   transform: translateX(1rem);
   color: #000000;
+ 
 }
 
 .echipa-box {
-  width: 10rem;
-  height: 10rem;
+  width: 9rem;
+  height: 9rem;
+  margin-top: -1rem;
   /* background-color: #ff0000; */
   float: left;
   -webkit-shape-outside: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
   clip-path: -webkit-shape-outside: circle(50% at 50% 50%);
+  
 }
 
 .antrenor1 {
   width: 100%;
+  
 }
 
 /*
