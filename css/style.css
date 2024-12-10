@@ -262,21 +262,6 @@ btn:active {
   margin-left: 30px;
 }
 
-.antrenamente {
-  padding-top: 30px;
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(to right, #000000, #ff0000);
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: 2px;
-  transition: all .2s;
-  z-index: -1;
-
-}
-
 .antrenamente:hover {
   transform: skewY(2deg) skewx(5deg) scale(1.1);
   text-shadow: .5px 1px;
@@ -329,10 +314,10 @@ btn:active {
 }
 
 .comp {
-    
-  position:relative;
- 
- 
+
+  position: relative;
+
+
 }
 
 /* .comp {
@@ -375,10 +360,11 @@ btn:active {
 }
 
 .section-antrenamente {
-  padding: 0rem 20rem 20rem 20rem;
+  padding-top: 10px;
+  margin-left: 20px;
   height: 50rem;
   /* opacity: .6; */
-  margin-top: 10rem;
+  margin-top: 2rem;
   background-size: cover;
   z-index: -1;
 }
@@ -454,12 +440,15 @@ btn:active {
 }
 
 .row-ant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   opacity: .9;
 }
 
 .section-echipa {
-  position: relative;
-  margin-top: 2%;
+  margin-top: 3%;
   padding-top: 10px;
   margin-left: 20px;
   height: 50rem;
@@ -470,9 +459,6 @@ btn:active {
 
 .row-echipa {
   background-color: #ffffff;
-  width: 70%;
-  height: 15rem;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -481,7 +467,31 @@ btn:active {
   opacity: .6;
   box-shadow: 0 1.5rem 4rem black;
   font-size: 1.6rem;
+  max-width: 70%;
+  max-height: 50%;
+}
 
+
+.antrenamente {
+  padding-top: 40px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #000000, #ff0000);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s;
+  z-index: -1;
+
+}
+
+.antrenamente h2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .antrenor {
@@ -496,7 +506,6 @@ btn:active {
 }
 
 .echipa-box {
-
   width: 10rem;
   height: 10rem;
   /* background-color: #ff0000; */
@@ -527,6 +536,8 @@ btn:active {
 
 /*sectiune contact*/
 .contact-section {
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 15rem;
   padding: 5rem 2rem;
   background-color: #f5f5f5;
@@ -641,16 +652,10 @@ btn:active {
   justify-content: center;
   gap: 20px;
 }
+
 .social-item a:hover {
   color: #ff0000;
   transform: rotate(15deg) scale(1.6);
-}
-
-.logobox img {
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
 }
 
 .footer-nav {
@@ -757,22 +762,26 @@ btn:active {
   padding-top: 10px;
   margin-left: 20px;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 6px;
 }
+
 /* 4 coloane una langa alta */
 .column {
   flex: 25%;
   max-width: 25%;
   padding: 0 5px;
 }
+
 .column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
+
 /* make menu responsive*/
 input[type="checkbox"] {
   display: none;
@@ -784,7 +793,8 @@ label[for="hamburger"] {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
+
   /* Responsive - menu part */
   label[for="hamburger"] {
     display: flex;
@@ -794,6 +804,7 @@ label[for="hamburger"] {
     padding-bottom: 35px;
     background-color: black;
   }
+
   ul.main-nav {
     align-items: center;
     position: absolute;
@@ -809,31 +820,37 @@ label[for="hamburger"] {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
+
   ul.main-nav li.push {
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
   }
-  input[type="checkbox"]:checked ~ ul {
+
+  input[type="checkbox"]:checked~ul {
     left: 0;
   }
-/* Responsive - facem 2 coloane din 4 */
+
+  /* Responsive - facem 2 coloane din 4 */
   .column {
     flex: 50%;
     max-width: 50%;
-  } 
+  }
+
   .section-gallery {
     margin-top: 4%;
     padding-top: 20px;
     margin-left: 20px;
   }
+
   /* Responsive- modificam si h2 */
   .section-gallery h2 {
     font-size: 45px;
   }
+
   .section-echipa {
     margin-top: 10%;
-   }
-  
+  }
+
   .row-echipa {
     width: 90%;
     height: auto;
@@ -841,17 +858,35 @@ label[for="hamburger"] {
     margin-right: auto;
     margin-top: 20px;
   }
+
+  /* Responsive- logo footer */
+  .logobox img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Responsive- contact form */
+  .contact-section {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
+
 @media screen and (max-width: 600px) {
+
   /* Responsive- coloanele merg una peste alta in loc de una langa alta */
   .column {
     flex: 100%;
     max-width: 100%;
   }
+
   .section-gallery {
     margin-top: 5%;
     padding-top: 30px;
   }
+
   /* Responsive- modificam si h2 */
   .section-gallery h2 {
     font-size: 40px;
@@ -861,7 +896,7 @@ label[for="hamburger"] {
     margin-top: 20%;
     padding-top: 20px;
   }
-  
+
   .row-echipa {
     width: 80%;
     height: auto;
