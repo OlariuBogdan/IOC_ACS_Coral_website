@@ -715,7 +715,7 @@ btn:active {
   display: none;
 }
 
-label {
+.ant-box label {
   display: inline-block;
   cursor: pointer;
   color: #FFF;
@@ -725,7 +725,7 @@ label {
   margin-top: 13px;
 }
 
-label:hover {
+.ant-box label:hover {
   box-shadow: rgba(6, 57, 224, 0.836) 0px 5px 15px, inset rgba(185, 183, 183, 0.849) 0px -10px 20px;
 }
 
@@ -752,15 +752,56 @@ label:hover {
   vertical-align: middle;
   width: 100%;
 }
+/* make menu responsive*/
+input[type="checkbox"] {
+  display: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
 
-/* Responsive - facem 2 coloane din 4 */
+label[for="hamburger"] {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
+  /* Responsive - menu part */
+  label[for="hamburger"] {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    background-color: black;
+  }
+  ul.main-nav {
+    align-items: center;
+    position: absolute;
+    left: 110%;
+    flex-direction: column;
+    top: 90px;
+    width: 100%;
+    height: calc(45vh - 40px);
+    transition: 0.5s;
+    box-shadow: rgba(6, 57, 224, 0.836) 0px 5px 15px, inset rgba(185, 183, 183, 0.849) 0px -10px 20px;
+    opacity: 90%;
+    border-bottom: blue solid 3px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  ul.main-nav li.push {
+    display: block;
+    margin:0 auto;
+  }
+  input[type="checkbox"]:checked ~ ul {
+    left: 0;
+  }
+/* Responsive - facem 2 coloane din 4 */
   .column {
     flex: 50%;
     max-width: 50%;
   } 
   .section-gallery {
-    margin-top: 6%;
+    margin-top: 4%;
     padding-top: 20px;
     margin-left: 20px;
   }
@@ -770,7 +811,6 @@ label:hover {
   }
   .section-echipa {
     margin-top: 10%;
-    padding-top: 10px;
    }
   
   .row-echipa {
@@ -781,16 +821,15 @@ label:hover {
     margin-top: 20px;
   }
 }
-/* Responsive- coloanele merg una peste alta in loc de una langa alta */
 @media screen and (max-width: 600px) {
+  /* Responsive- coloanele merg una peste alta in loc de una langa alta */
   .column {
     flex: 100%;
     max-width: 100%;
   }
   .section-gallery {
-    margin-top: 15%;
+    margin-top: 5%;
     padding-top: 30px;
-    margin-left: 20px;
   }
   /* Responsive- modificam si h2 */
   .section-gallery h2 {
