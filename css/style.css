@@ -3,15 +3,12 @@ Culori:
 #f5f5f5 pentru contrast background
 Grey: #444
 Grey #777
-
 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /*nu adaog marginile si paddingul la inaltimea totala a "box-ului"*/
-
-
 }
 
 body {
@@ -35,13 +32,10 @@ body {
   z-index: -1;
   position: relative;
   margin-bottom: 20px;
-
-
 }
 
 video {
   z-index: -1;
-
 }
 
 .zone {
@@ -67,7 +61,6 @@ nav {
   margin: 0;
   font-size: 0.5em;
   background-color: #000000;
-
 }
 
 .main-nav li a:hover {
@@ -75,7 +68,6 @@ nav {
   /* Schimbă culoarea la hover */
   transition: color 0.3s ease;
 }
-
 
 .push {
   margin-left: auto;
@@ -104,7 +96,6 @@ a {
   /* misc 50% la stanga si in sus pentru a o centra*/
   text-align: center;
   /* pentru a alinia si elementele child - btn-alb*/
-
 }
 
 .header-prim {
@@ -114,9 +105,6 @@ a {
   /*background: rgba(119, 119, 119, 0.226);*/
   margin-bottom: 60px;
   /* mut btn-alb 60px mai jos*/
-
-
-
 }
 
 .header-principal {
@@ -130,7 +118,6 @@ a {
   animation-timing-function: ease-out;
   /*animation-iteration-count: 2;*/
   text-shadow: 0 10px 20px rgb(14, 13, 13);
-
 }
 
 .header-secundar {
@@ -148,13 +135,11 @@ a {
   0% {
     opacity: 0;
     transform: translateX(-100px);
-
   }
 
   100% {
     opacity: 1;
     transform: translate(0);
-
   }
 }
 
@@ -162,7 +147,6 @@ a {
   0% {
     opacity: 0;
     transform: translateX(100px);
-
   }
 
   80% {
@@ -172,7 +156,6 @@ a {
   100% {
     opacity: 1;
     transform: translate(0);
-
   }
 }
 
@@ -185,13 +168,11 @@ a {
   border-radius: 100px;
   transition: all .3s;
   position: relative;
-
 }
 
 .btn-alb {
   background-color: #fff;
   color: #777;
-
 }
 
 .btn:hover {
@@ -207,14 +188,11 @@ btn:active {
   0% {
     opacity: 0;
     transform: translateY(30px);
-
-
   }
 
   100% {
     opacity: 1;
     transform: translate(0);
-
   }
 }
 
@@ -267,8 +245,6 @@ btn:active {
   text-shadow: .5px 1px;
 }
 
-
-
 .heading {
   font-size: 16px;
   font-weight: 700;
@@ -298,7 +274,6 @@ btn:active {
   padding: 3px;
   transition: all .2s;
   margin-left: 20px;
-
 }
 
 .btn-text:hover {
@@ -314,10 +289,7 @@ btn:active {
 }
 
 .comp {
-
   position: relative;
-
-
 }
 
 /* .comp {
@@ -380,7 +352,6 @@ btn:active {
   margin: 30px;
   width: 20rem;
   height: 30rem;
-
   box-shadow: 0 1.5rem 4rem black;
 }
 
@@ -433,7 +404,6 @@ btn:active {
   opacity: .9;
 }
 
-
 .section-echipa {
   margin-top: 3%;
   padding-top: 10px;
@@ -459,7 +429,6 @@ btn:active {
   max-height: 50%;
 }
 
-
 .antrenamente {
   padding-top: 40px;
   font-size: 3rem;
@@ -472,14 +441,6 @@ btn:active {
   letter-spacing: 2px;
   transition: all .2s;
   z-index: -1;
-
-}
-
-.antrenamente h2 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .antrenor {
@@ -491,7 +452,7 @@ btn:active {
   font-size: medium;
   transform: translateX(1rem);
   color: #000000;
- 
+
 }
 
 .echipa-box {
@@ -504,12 +465,10 @@ btn:active {
   shape-outside: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
   clip-path: -webkit-shape-outside: circle(50% at 50% 50%);
-  
 }
 
 .antrenor1 {
   width: 100%;
-  
 }
 
 /*
@@ -522,9 +481,6 @@ btn:active {
     z-index: -1;
 
   } */
-
-
-
 
 /*sectiune contact*/
 .contact-section {
@@ -603,8 +559,6 @@ btn:active {
   color: #444;
 }
 
-
-
 .footer {
   margin-top: 4rem;
   margin-bottom: 10px;
@@ -633,7 +587,7 @@ btn:active {
   margin-right: 1rem;
 }
 
-/*Laurentiu add social */
+/*Laurentiu add social to footer*/
 .social-item {
   display: flex;
   font-size: 22px;
@@ -653,7 +607,6 @@ btn:active {
   border-top: 1px solid white;
   padding: 2rem;
   display: inline-block;
-
 }
 
 .footer-link,
@@ -667,22 +620,19 @@ btn:active {
 .footer-link:hover {
   color: #ff0000;
   background-color: #555;
-
 }
 
 .footer-item:hover {
   transform: rotate(5deg) scale(1.1);
-
 }
 
 .footer_copy_right {
   border-top: 1px solid black;
   padding: 2rem;
   width: 80%;
-
 }
 
-/*Laurentiu Part*/
+/*Laurentiu Part for antrenamente*/
 
 #ch1 {
   display: none;
@@ -838,18 +788,6 @@ label[for="hamburger"] {
     font-size: 45px;
   }
 
-  .section-echipa {
-    margin-top: 10%;
-  }
-
-  .row-echipa {
-    width: 90%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-  }
-
   /* Responsive- logo footer */
   .logobox img {
     background-size: cover;
@@ -863,6 +801,7 @@ label[for="hamburger"] {
     margin-left: 0%;
     margin-right: 0%;
   }
+  /* box antrenamente push footer down*/
   .row-ant {
     display: block;
   }
@@ -879,23 +818,5 @@ label[for="hamburger"] {
   .section-gallery {
     margin-top: 5%;
     padding-top: 30px;
-  }
-
-  /* Responsive- modificam si h2 */
-  .section-gallery h2 {
-    font-size: 40px;
-  }
-
-  .section-echipa {
-    margin-top: 20%;
-    padding-top: 20px;
-  }
-
-  .row-echipa {
-    width: 80%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-  }
+  } 
 }
