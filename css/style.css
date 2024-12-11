@@ -426,7 +426,6 @@ btn:active {
   box-shadow: 0 1.5rem 4rem black;
   font-size: 1.6rem;
   max-width: 70%;
-  max-height: 50%;
 }
 
 .antrenamente {
@@ -560,9 +559,9 @@ btn:active {
 }
 
 .footer {
-  margin-top: 4rem;
-  margin-bottom: 10px;
+  margin-top: 10rem;
   background-color: #333;
+  border-bottom: 1px solid  blue;
   padding: 5rem 5rem 5rem 5rem;
   font-size: 1rem;
   text-align: center;
