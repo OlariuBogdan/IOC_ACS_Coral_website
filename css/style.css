@@ -332,6 +332,7 @@ btn:active {
 }
 
 .section-antrenamente {
+
   padding-top: 10px;
   margin-left: 20px;
   height: 50rem;
@@ -399,7 +400,7 @@ btn:active {
 
 .row-ant {
   /* ant-box stay on middle*/
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
   opacity: .9;
@@ -694,6 +695,8 @@ btn:active {
   margin-top: 3%;
   padding-top: 10px;
   margin-left: 20px;
+  margin-right: 20px;
+
 }
 
 .row {
@@ -717,8 +720,6 @@ btn:active {
 /* make menu responsive*/
 input[type="checkbox"] {
   display: none;
-  appearance: none;
-  -webkit-appearance: none;
 }
 
 label[for="hamburger"] {
@@ -752,7 +753,7 @@ label[for="hamburger"] {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
-
+  /* Responsive - add contact to the middle */
   ul.main-nav li.push {
     display: block;
     margin: 0 auto;
@@ -770,7 +771,6 @@ label[for="hamburger"] {
   .section-gallery {
     margin-top: 4%;
     padding-top: 20px;
-    margin-left: 20px;
   }
 
   /* Responsive- modificam si h2 */
